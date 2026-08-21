@@ -1,0 +1,96 @@
+:root {
+    --primary: #4f46e5;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --white: #ffffff;
+    --gray: #64748b;
+
+    --small: 0.875rem;
+    --normal: 1rem;
+    --large: 1.25rem;
+    --title: 2.5rem;
+
+    --space: 1rem;
+    --big-space: 3rem;
+
+    --radius: 0.75rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--light);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+    font-size: var(--normal);
+    line-height: 1.6;
+}
+
+header {
+    padding: var(--space);
+    background: var(--white);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: var(--large);
+}
+
+nav {
+    margin-top: var(--space);
+}
+
+nav a {
+    margin: var(--space);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: var(--big-space) var(--space);
+}
+
+.hero,
+.content {
+    padding: var(--big-space);
+    background: var(--white);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--title);
+    margin: 0 0 var(--space);
+}
+
+.label {
+    color: var(--primary);
+    font-size: var(--small);
+    font-weight: bold;
+}
+
+address {
+    font-style: normal;
+}
+
+address a {
+    color: var(--primary);
+}
+
+footer {
+    padding: var(--space);
+    color: var(--gray);
+    text-align: center;
+    font-size: var(--small);
+}
